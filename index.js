@@ -19,6 +19,7 @@ const io = SocketServer(server, {
 
 io.on('connection', (socket)=>{
 
+    console.log("connected : " + socket.id);
     socket.on('message_sent', (message)=>{
         console.log(message);
 
