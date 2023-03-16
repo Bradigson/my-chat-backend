@@ -4,6 +4,7 @@ const http = require('http');
 const cors = require('cors');
 
 const app = express();
+app.use(cors('*'));
 
 //socket configuration
 const server = http.createServer(app);
